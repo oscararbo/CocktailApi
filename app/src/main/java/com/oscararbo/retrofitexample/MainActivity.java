@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up RecyclerView with GridLayoutManager
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        cocktailAdapter = new CocktailAdapter(this, cocktails, this::showCocktailDetails);
+        cocktailAdapter = new CocktailAdapter(this, cocktails);
         recyclerView.setAdapter(cocktailAdapter);
 
         // Initialize Retrofit service
